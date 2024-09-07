@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("narsimha2580/test")
+       app = docker.build("Manogithubnew/firtscicd")
     }
 
     stage('Test image') {
