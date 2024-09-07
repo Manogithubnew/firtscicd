@@ -22,7 +22,7 @@ node {
 
     stage('Push image') {
         
-        docker.withRegistry('mrthcldock', 'doocker-hub-credential') {
+        docker.withRegistry('https://registry.hub.docker.com', 'doocker-hub-credential') {
             app.push("${env.BUILD_NUMBER}")
         }
     }
