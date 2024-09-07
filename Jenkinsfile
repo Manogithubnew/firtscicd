@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("manogithubnew/firtscicd")
+       app = docker.build("mrthcldock/tektondemo")
     }
 
     stage('Test image') {
