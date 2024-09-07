@@ -22,7 +22,7 @@ node {
 
     stage('Push image') {
         
-        docker.withRegistry('https://hub.docker.com/repository/docker/mrtducker/mrt-cicd.com', 'Mrtduck@695') {
+        docker.withRegistry('https://hub.docker.com/', 'Mrtduck@695') {
             app.push("${env.BUILD_NUMBER}")
         }
     }
