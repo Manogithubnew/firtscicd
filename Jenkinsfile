@@ -24,6 +24,7 @@ node {
         
         docker.withRegistry('https://registry.hub.docker.com', 'doocker-hub-credential') {
             app.push("${env.BUILD_NUMBER}")
+            app.push("latest")
         }
     }
     
