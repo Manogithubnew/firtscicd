@@ -27,6 +27,9 @@ node {
             app.push("latest")
         }
     }
+    echo "Image pushed to repository"    
+        }
+    }
     
     stage('Trigger ManifestUpdate') {
                 echo "triggering updatemanifestjob"
